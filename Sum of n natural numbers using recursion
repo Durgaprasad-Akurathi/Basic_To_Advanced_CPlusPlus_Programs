@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int natural_numbers(int n)
+{
+  if(n==0)
+  return 0;
+  return n+natural_numbers(n-1);
+}
+int main()
+{
+  int n;
+  cout<<"Enter the value of the n: ";
+  cin>>n;
+  cout<<"sum of n natural numbers using recursion: "<<natural_numbers(n);
+}
