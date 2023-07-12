@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char x=127;
+    int value=++x;
+    //For Advance Compiler
+    cout<<value<<endl;
+    //For Old Compiler
+    cout<<(int)value;
+    
+    
+    /*Similarly happens to all data types, like int,double,float*/
+}
