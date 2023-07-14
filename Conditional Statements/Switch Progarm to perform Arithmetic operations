@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int ch,a,b;
+    cout<<"Enter the 1 of addition: "<<endl;
+    cout<<"Enter the 2 of subtraction: "<<endl;
+    cout<<"Enter the 3 of multiplication: "<<endl;
+    cout<<"Enter the 4 of division: "<<endl;
+    cout<<"Enter the 5 of modulus: "<<endl;
+    cin>>ch;
+    cout<<"Enter the a&b values: ";
+    cin>>a>>b;
+    switch(ch)
+    {
+        case 1:cout<<a+b; break;
+        case 2:cout<<a-b; break;
+        case 3:cout<<a*b; break;
+        case 4:cout<<a/b; break;
+        case 5:cout<<a%b; break;
+        default: cout<<"Invalid"; break;
+    }
+}
