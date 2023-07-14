@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    if(int c=a+b; c>10)    //only supports in C++17 Compiler//
+    cout<<c<<endl;
+}
+
+
+// -----------------> Other Program <----------------- //
+
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+{                             ///////////////////////////////////////                                 
+    int c=a+b;     
+    if(c>10)                       At this area 'C' has scope
+    cout<<c<<endl;
+}                            ///////////////////////////////////////                                 
+}
