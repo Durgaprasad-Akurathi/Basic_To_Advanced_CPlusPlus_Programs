@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int amount, dis;
+    float amount, dis;
     cout<<"Enter the bill amount: ";
     cin>>amount;
     if(amount>=1000)
