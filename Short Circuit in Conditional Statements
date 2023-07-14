@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,i=5;
+    cin>>a>>b;
+    if(a>b && ++i<=b)
+    cout<<i<<endl;
+    else if(a<b && ++i>=b)
+    cout<<i<<endl;
+    else if(a>b || ++i>=b)
+    cout<<i<<endl;
+    else if(a<b || ++i<=b)
+    cout<<i<<endl;
+}
