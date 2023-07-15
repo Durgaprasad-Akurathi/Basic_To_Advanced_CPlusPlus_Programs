@@ -1,0 +1,66 @@
+// --------------> Using For Loop <-------------- //
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n1, n2, n3;
+    cout<<"Please enter the three numbers: ";
+    cin>>n1>>n2>>n3;
+    int gcd=1;
+    int maxi=max(n1, max(n2,n3));
+    for(int i=2; i<=maxi; i++)
+    {
+        if(n1%i==0 && n2%i==0 && n3%i==0)
+        gcd=i;
+    }
+    cout<<"GCD of the given number is: "<<gcd;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// --------------> Using While Loop <-------------- //
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n1, n2, n3, i=2;
+    cout<<"Please enter the three numbers: ";
+    cin>>n1>>n2>>n3;
+    int gcd=1;
+    int maxi=max(n1, max(n2,n3));
+    while(i<=maxi)
+    {
+        if(n1%i==0 && n2%i==0 && n3%i==0)
+        gcd=i;
+        i++;
+    }
+    cout<<"GCD of the given number is: "<<gcd;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// --------------> Using Do While Loop <-------------- //
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n1, n2, n3, i=2;
+    cout<<"Please enter the three numbers: ";
+    cin>>n1>>n2>>n3;
+    int gcd=1;
+    int maxi=max(n1, max(n2,n3));
+    do
+    {
+        if(n1%i==0 && n2%i==0 && n3%i==0)
+        gcd=i;
+        i++;
+    }while(i<=maxi);
+    cout<<"GCD of the given number is: "<<gcd;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
