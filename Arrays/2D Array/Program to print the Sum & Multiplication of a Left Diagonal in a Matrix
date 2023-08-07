@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int r,c, sum=0;
+    int r,c, sum=0, mul=1;
     cin>>r>>c;
     int a[r][c];
     for(int i=0; i<r; i++)
@@ -13,8 +13,12 @@ int main()
         for(int j=0; j<c; j++)
         {
             if(i==j)
-            sum+=a[i][j];
+            {
+                sum+=a[i][j];
+                mul*=a[i][j];
+            }
         }
     }
-    cout<<"Left Diagonal Sum: "<<sum<<endl;
+    cout<<"Sum of the Left Diagonal is: "<<sum<<endl;
+    cout<<"Multiplication of the Left Diagonal is: "<<mul<<endl;
 }
