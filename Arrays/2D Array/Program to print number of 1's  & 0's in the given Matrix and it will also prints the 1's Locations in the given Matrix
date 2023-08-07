@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int r,c, OneCount=0, ZeroCount;
+    cin>>r>>c;
+    int a[r][c];
+    for(int i=0; i<r; i++)
+    for(int j=0; j<c; j++)
+    cin>>a[i][j];
+    for(int i=0; i<r; i++)
+    {
+        for(int j=0; j<c; j++)
+        {
+            if(a[i][j]==1)
+            {
+                OneCount++;
+                cout<<"("<<i<<","<<j<<")"<<" ";
+            }
+            else ZeroCount++;
+        }
+        cout<<endl;
+    }
+    cout<<"Number of 1's in the Given Matrix is: "<<OneCount<<endl;
+    cout<<"Number of 0's in the Given Matrix is: "<<ZeroCount<<endl;
+}
