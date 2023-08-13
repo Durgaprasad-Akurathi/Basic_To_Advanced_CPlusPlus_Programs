@@ -17,3 +17,29 @@ int main()
     
     delete[] ptr;
 }
+
+
+
+////////////////////////////////////////////////////////////////////////////////// Another Example ///////////////////////////////////////////////////////////////////////
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int* fun(int size)
+{
+    int *p=new int[size];
+    for(int i=0; i<size; i++)
+    p[i]=i*10;
+    return p;
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    int* ptr=fun(n);
+    for(int i=0; i<n; i++)
+    cout<<ptr[i]<<" ";
+    
+    delete[] ptr;
+}
