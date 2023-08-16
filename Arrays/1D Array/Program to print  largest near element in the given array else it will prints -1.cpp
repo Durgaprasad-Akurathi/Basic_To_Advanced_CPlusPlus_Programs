@@ -23,3 +23,13 @@ int main()
 	for(int i=0; i<n; i++)
 	cout<<a[i]<<" ";
 }
+
+
+example-1: 4 2 3 9 7 6  //Input
+output: 9 3 9 -1 -1 -1  //output
+
+
+example-2: 7 20 31 19 70 64  //Input
+output: 20 31 70 70 -1 -1  //output
+
+	
