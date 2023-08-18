@@ -1,8 +1,13 @@
-// Problem Statement:
+// You are given an array of integers. Your task is to modify the array such that each element is replaced with the next greater element in the array, or -1 if no such element exists.
 
-You are provided with an unsorted array containing both negative and positive numbers. Your task is to replace each element in the array with the nearest larger element to its right. If there is no larger element on the right side, replace the element with -1.
+// Input:
 
-Write a program that takes the size of the array and its elements as input and produces the modified array based on the replacement rules.
+// The first line contains an integer n (1 ≤ n ≤ 1000), representing the size of the array.
+// The second line contains n space-separated integers a[i] (-10^9 ≤ a[i] ≤ 10^9), where each a[i] is an element of the array.
+
+// Output:
+
+// Output a single line containing n space-separated integers, representing the modified array after replacing each element with the next greater element or -1 if no such element exists.
 
 // Example 1:
 // Input:
@@ -42,8 +47,6 @@ int main()
     }
     
     for(int i=0; i<n; i++)
-    cout<<a[i]<<" ";
-}
     cout<<a[i]<<" ";
 }
 
