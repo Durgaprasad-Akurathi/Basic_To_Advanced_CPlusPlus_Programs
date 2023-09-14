@@ -52,3 +52,39 @@ int main()
     else cout<<near;
 }
 
+
+///////////////////////////////////////////////////////////////////////////// Using Function //////////////////////////////////////////////////////////////////////////
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int nearest(int a[], int n, int key, int l, int r)
+{
+	int near=INT_MAX;
+	while(l<=r)
+	{
+		int mid=(l+r)/2;
+		if(a[mid]==key)
+		return key;
+		
+		else if(a[mid]>key)
+		r=mid-1;
+		
+		else if(a[mid]<key)
+		{
+			near=a[mid];
+			l=mid+1;
+		}
+	}
+	return near;	
+}
+
+int main()
+{
+	int a[]={1, 10, 67, 567, 982, 9032, 10291};
+	int n=sizeof(a)/sizeof(a[0]);
+	int key, l=0, r=n-1;
+	cin>>key;
+	
+	cout<<nearest(a, n, key, l, r);	
+}
