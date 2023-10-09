@@ -15,3 +15,22 @@ int main()
     for(auto &x:v)
     cout<<x<<" ";
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////// ANOTHER TYPE /////////////////////////////////////////////////////////////////////////////////////
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    vector<int> v;
+    while(cin>>a)
+    v.push_back(a);
+
+    for(auto &x:v)
+    cout<<x<<" ";
+}
+
+
