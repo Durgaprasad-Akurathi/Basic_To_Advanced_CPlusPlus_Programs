@@ -41,3 +41,22 @@ int main()
     for(int i=0; i<v.size(); i++)
     cout<<v.at(i)<<" ";    //This will check the array out of bound index & it will through exception like out of bound.It is better to use this syntax to avoid runtime error.
 }
+
+
+/////////////////////////////////////////////////////////////////////////////// ANOTHER TYPE ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include"bits/stdc++.h"
+using namespace std;
+int main()
+{
+    int n=10, x=100;
+    vector<int> v(n,x);
+    for(auto it=v.begin(); it!=v.end(); it++)
+    cout<<*it<<" ";
+
+
+
+    //n=creating the vector size
+    //x=putting all the elements with the defined one in the given vector size.
+}
