@@ -60,3 +60,21 @@ int main()
     //n=creating the vector size
     //x=putting all the elements with the defined one in the given vector size.
 }
+
+/////////////////////////////////////////////////////////////////////////////// ANOTHER TYPE ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include"bits/stdc++.h"
+using namespace std;
+int main()
+{
+    int n=10, x=100;
+    vector<int> v(n,x);
+    for(auto it=v.begin(); it!=v.end(); it++)
+    cout<<*it<<" ";
+
+
+
+    //n=creating the vector size
+    //x=putting all the elements with the defined one in the given vector size.
+}
