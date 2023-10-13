@@ -28,3 +28,21 @@ int main()
     }
     cout<<min;
 }
+
+//////////////////////////////////////////////////////////////////////////////////// USING INBUILD FUNCTION /////////////////////////////////////////////////////////////////////////////
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[1000001], n=0;
+    while(cin>>a[n])
+    {
+        if(cin.get()=='\t')
+        break;
+        n++;
+    }
+
+    int value=*min_element(a, a+n);
+    cout<<"Minimum element in the given array: "<<value;
+}
