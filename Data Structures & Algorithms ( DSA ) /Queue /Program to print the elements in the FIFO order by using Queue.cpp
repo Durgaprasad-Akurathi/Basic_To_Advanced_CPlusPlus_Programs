@@ -3,13 +3,13 @@ using namespace std;
 int main()
 {
     int a;
-    queue<int> q;
+    queue<int> qu;
     while(cin>>a)
-    q.push(a);
+    qu.push(a);
 
-    while(!q.empty())
+    while(!qu.empty())
     {
-        cout<<q.front()<<" ";
-        q.pop();
+        cout<<qu.front()<<" ";
+        qu.pop();
     }
 }
