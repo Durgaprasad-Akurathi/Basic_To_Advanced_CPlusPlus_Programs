@@ -12,4 +12,7 @@ int main()
     cout<<*i<<" ";
     i=prev(i,2);
     cout<<*i<<" ";
+
+    advance(i,7);
+    cout<<*i<<" ";
 }
