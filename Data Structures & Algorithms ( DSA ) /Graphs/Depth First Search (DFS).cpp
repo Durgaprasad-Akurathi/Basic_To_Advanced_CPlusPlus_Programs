@@ -26,6 +26,5 @@ int main()
     }
 
     vector<bool> visited(n+1, false);
-    bool status=true;
     DFS(1, visited);
 }
