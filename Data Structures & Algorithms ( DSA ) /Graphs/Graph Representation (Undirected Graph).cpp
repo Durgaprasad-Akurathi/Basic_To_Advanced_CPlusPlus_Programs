@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-    int n,e;
-    cin>>n>>e;
+    int n,m;
+    cin>>n>>m;
     vector<int> v[n+1];
-    while(e--)
+    while(m--)
     {
         int x,y;
         cin>>x>>y;
@@ -17,7 +17,7 @@ int main()
     {
         cout<<i<<"->";
         for(int j=0; j<v[i].size(); j++)
-        cout<<v[i][j]<<" ";
-        cout<<"\n";
+            cout<<v[i][j]<<" ";
+        cout<<endl;
     }
 }
